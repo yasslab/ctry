@@ -3,8 +3,6 @@ require "rake/extensiontask"
 
 task :build => :compile
 
-Rake::ExtensionTask.new("fast_try") do |ext|
-  ext.lib_dir = "lib/fast_try"
-end
+Rake::ExtensionTask.new("fast_try")
 
 task :default => [:clobber, :compile, :spec]
