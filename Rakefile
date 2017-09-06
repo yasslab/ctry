@@ -4,7 +4,7 @@ require "rake/testtask"
 
 task :build => :compile
 
-Rake::ExtensionTask.new("fast_try")
+Rake::ExtensionTask.new("ctry")
 
 Rake::TestTask.new do |t|
   t.libs << 'test'

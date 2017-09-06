@@ -45,7 +45,7 @@ nil_try(int argc, VALUE *argv, VALUE self)
 }
 
 void
-Init_fast_try(void)
+Init_ctry(void)
 {
   rb_define_method(rb_cObject, "try", rb_obj_try, -1);
   rb_define_method(rb_cObject, "try!", rb_obj_try_bang, -1);

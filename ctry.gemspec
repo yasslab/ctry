@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
-  spec.name          = "fast_try"
+  spec.name          = "ctry"
   spec.version       = "0.0.1"
   spec.authors       = ["Seiei Miyagi"]
   spec.email         = ["hanachin@gmail.com"]
 
-  spec.summary       = %q{Fast try/try! implementation}
-  spec.homepage      = "https://github.com/yasslab/fast_try"
+  spec.summary       = %q{try/try! implementation}
+  spec.homepage      = "https://github.com/yasslab/ctry"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.extensions    = ["ext/fast_try/extconf.rb"]
+  spec.extensions    = ["ext/ctry/extconf.rb"]
 
   spec.add_development_dependency "activesupport"
   spec.add_development_dependency "benchmark-ips"
