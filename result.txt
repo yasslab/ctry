@@ -1,214 +1,214 @@
 nil: nonexisting method
 Warming up --------------------------------------
-                 try    57.200k i/100ms
-            ctry    89.303k i/100ms
+                 try    59.641k i/100ms
+                ctry    90.525k i/100ms
 Calculating -------------------------------------
-                 try      1.248M (±12.2%) i/s -      6.120M in   5.003033s
-            ctry      2.810M (±13.1%) i/s -     13.931M in   5.085153s
+                 try      1.268M (±12.7%) i/s -      6.203M in   5.014803s
+                ctry      2.901M (±12.1%) i/s -     14.212M in   5.003254s
 
 Comparison:
-            ctry:  2810162.7 i/s
-                 try:  1248105.3 i/s - 2.25x  slower
+                ctry:  2900538.1 i/s
+                 try:  1268159.7 i/s - 2.29x  slower
 
 nil: nonexisting method with args
 Warming up --------------------------------------
-                 try    62.180k i/100ms
-            ctry    92.718k i/100ms
+                 try    65.307k i/100ms
+                ctry    89.899k i/100ms
 Calculating -------------------------------------
-                 try      1.258M (± 9.8%) i/s -      6.218M in   5.005827s
-            ctry      2.946M (±11.0%) i/s -     14.464M in   5.007656s
+                 try      1.283M (± 6.2%) i/s -      6.400M in   5.009431s
+                ctry      2.933M (± 8.6%) i/s -     14.564M in   5.012915s
 
 Comparison:
-            ctry:  2946069.8 i/s
-                 try:  1258330.5 i/s - 2.34x  slower
+                ctry:  2933298.2 i/s
+                 try:  1283496.0 i/s - 2.29x  slower
 
 nil: method call
 Warming up --------------------------------------
-                 try    63.783k i/100ms
-                try!    62.727k i/100ms
-            ctry    92.581k i/100ms
-           ctry!    89.400k i/100ms
-                  &.    94.771k i/100ms
+                 try    65.842k i/100ms
+                try!    65.716k i/100ms
+                ctry    89.505k i/100ms
+               ctry!    89.350k i/100ms
+                  &.    96.788k i/100ms
 Calculating -------------------------------------
-                 try      1.304M (± 5.8%) i/s -      6.506M in   5.008745s
-                try!      1.178M (±12.3%) i/s -      5.771M in   5.000891s
-            ctry      2.938M (± 8.5%) i/s -     14.628M in   5.020782s
-           ctry!      2.972M (± 7.2%) i/s -     14.840M in   5.021433s
-                  &.      3.785M (± 6.9%) i/s -     18.859M in   5.009081s
+                 try      1.319M (± 5.1%) i/s -      6.584M in   5.003831s
+                try!      1.303M (± 5.0%) i/s -      6.506M in   5.006671s
+                ctry      2.969M (± 8.1%) i/s -     14.768M in   5.018903s
+               ctry!      2.980M (± 6.0%) i/s -     14.921M in   5.027972s
+                  &.      3.775M (± 6.9%) i/s -     18.777M in   5.002256s
 
 Comparison:
-                  &.:  3785462.9 i/s
-           ctry!:  2971720.6 i/s - 1.27x  slower
-            ctry:  2938211.5 i/s - 1.29x  slower
-                 try:  1303727.8 i/s - 2.90x  slower
-                try!:  1177551.2 i/s - 3.21x  slower
+                  &.:  3774848.5 i/s
+               ctry!:  2979644.8 i/s - 1.27x  slower
+                ctry:  2968811.3 i/s - 1.27x  slower
+                 try:  1319462.1 i/s - 2.86x  slower
+                try!:  1302887.2 i/s - 2.90x  slower
 
 nil: argument forwarding
 Warming up --------------------------------------
-                 try    52.328k i/100ms
-                try!    47.781k i/100ms
-            ctry    69.791k i/100ms
-            ctry    71.017k i/100ms
-                  &.    82.041k i/100ms
+                 try    52.089k i/100ms
+                try!    52.524k i/100ms
+                ctry    73.342k i/100ms
+                ctry    73.662k i/100ms
+                  &.    95.384k i/100ms
 Calculating -------------------------------------
-                 try    845.777k (± 8.3%) i/s -      4.186M in   5.000207s
-                try!    841.596k (±10.8%) i/s -      4.157M in   5.003741s
-            ctry      1.622M (±10.2%) i/s -      8.096M in   5.049080s
-            ctry      1.655M (± 7.9%) i/s -      8.238M in   5.012820s
-                  &.      3.826M (± 7.0%) i/s -     19.116M in   5.022900s
+                 try    885.201k (± 4.2%) i/s -      4.428M in   5.010846s
+                try!    883.717k (± 4.7%) i/s -      4.412M in   5.004596s
+                ctry      1.697M (± 5.8%) i/s -      8.508M in   5.032629s
+                ctry      1.702M (± 5.9%) i/s -      8.545M in   5.040942s
+                  &.      3.711M (± 6.0%) i/s -     18.504M in   5.005038s
 
 Comparison:
-                  &.:  3826304.6 i/s
-            ctry:  1655077.8 i/s - 2.31x  slower
-                 try:   845777.2 i/s - 4.52x  slower
-                try!:   841595.8 i/s - 4.55x  slower
+                  &.:  3711373.1 i/s
+                ctry:  1701776.1 i/s - 2.18x  slower
+                 try:   885201.4 i/s - 4.19x  slower
+                try!:   883716.8 i/s - 4.20x  slower
 
 nil: block forwarding
 Warming up --------------------------------------
-                 try    56.609k i/100ms
-                try!    54.594k i/100ms
-            ctry    74.303k i/100ms
-           ctry!    73.665k i/100ms
-                  &.    94.765k i/100ms
+                 try    59.047k i/100ms
+                try!    58.990k i/100ms
+                ctry    80.315k i/100ms
+               ctry!    81.363k i/100ms
+                  &.    96.122k i/100ms
 Calculating -------------------------------------
-                 try    991.378k (±11.6%) i/s -      4.925M in   5.053514s
-                try!    981.473k (±10.1%) i/s -      4.859M in   5.007416s
-            ctry      2.088M (± 9.3%) i/s -     10.328M in   5.000914s
-           ctry!      1.961M (±17.2%) i/s -      9.355M in   5.009036s
-                  &.      3.822M (± 6.8%) i/s -     19.048M in   5.008324s
+                 try      1.050M (± 4.8%) i/s -      5.255M in   5.017016s
+                try!      1.058M (± 5.3%) i/s -      5.309M in   5.032965s
+                ctry      2.166M (± 4.9%) i/s -     10.843M in   5.019190s
+               ctry!      2.145M (± 5.8%) i/s -     10.740M in   5.027004s
+                  &.      3.805M (± 5.6%) i/s -     19.032M in   5.018783s
 
 Comparison:
-                  &.:  3822226.5 i/s
-            ctry:  2088183.4 i/s - 1.83x  slower
-           ctry!:  1961183.3 i/s - 1.95x  slower
-                 try:   991378.0 i/s - 3.86x  slower
-                try!:   981473.0 i/s - 3.89x  slower
+                  &.:  3804560.8 i/s
+                ctry:  2165726.9 i/s - 1.76x  slower
+               ctry!:  2144756.5 i/s - 1.77x  slower
+                try!:  1058089.5 i/s - 3.60x  slower
+                 try:  1050046.9 i/s - 3.62x  slower
 
 nil: only block
 Warming up --------------------------------------
-                 try    73.956k i/100ms
-                try!    72.519k i/100ms
-            ctry    86.803k i/100ms
-           ctry!    87.042k i/100ms
-                  &.    94.257k i/100ms
+                 try    74.143k i/100ms
+                try!    73.848k i/100ms
+                ctry    89.552k i/100ms
+               ctry!    90.647k i/100ms
+                  &.    97.356k i/100ms
 Calculating -------------------------------------
-                 try      1.715M (± 5.6%) i/s -      8.579M in   5.018417s
-                try!      1.678M (±10.5%) i/s -      8.267M in   5.009155s
-            ctry      2.797M (±13.3%) i/s -     13.628M in   5.006665s
-           ctry!      2.909M (± 9.9%) i/s -     14.362M in   5.010813s
-                  &.      3.685M (±12.1%) i/s -     18.097M in   5.005694s
+                 try      1.702M (± 5.2%) i/s -      8.526M in   5.023879s
+                try!      1.718M (± 5.1%) i/s -      8.640M in   5.042447s
+                ctry      2.978M (± 6.5%) i/s -     14.866M in   5.014935s
+               ctry!      2.967M (± 5.4%) i/s -     14.866M in   5.026652s
+                  &.      3.817M (± 6.3%) i/s -     19.082M in   5.020422s
 
 Comparison:
-                  &.:  3685474.3 i/s
-           ctry!:  2908922.0 i/s - 1.27x  slower
-            ctry:  2797468.2 i/s - 1.32x  slower
-                 try:  1714953.9 i/s - 2.15x  slower
-                try!:  1677520.1 i/s - 2.20x  slower
+                  &.:  3817464.5 i/s
+                ctry:  2978216.1 i/s - 1.28x  slower
+               ctry!:  2966506.8 i/s - 1.29x  slower
+                try!:  1718178.4 i/s - 2.22x  slower
+                 try:  1702041.9 i/s - 2.24x  slower
 
 nonexisting method
 Warming up --------------------------------------
-                 try    58.970k i/100ms
-            ctry    58.888k i/100ms
+                 try    58.458k i/100ms
+                ctry    58.169k i/100ms
 Calculating -------------------------------------
-                 try      1.142M (± 4.5%) i/s -      5.720M in   5.018140s
-            ctry      1.131M (± 8.7%) i/s -      5.653M in   5.058051s
+                 try      1.155M (± 4.4%) i/s -      5.787M in   5.020419s
+                ctry      1.147M (± 4.4%) i/s -      5.759M in   5.033043s
 
 Comparison:
-                 try:  1142236.2 i/s
-            ctry:  1131035.9 i/s - same-ish: difference falls within error
+                 try:  1155070.5 i/s
+                ctry:  1146548.0 i/s - same-ish: difference falls within error
 
 nonexisting method with args
 Warming up --------------------------------------
-                 try    50.331k i/100ms
-            ctry    51.077k i/100ms
+                 try    58.639k i/100ms
+                ctry    58.064k i/100ms
 Calculating -------------------------------------
-                 try      1.131M (± 6.0%) i/s -      5.637M in   5.003224s
-            ctry      1.130M (± 5.0%) i/s -      5.670M in   5.029395s
+                 try      1.142M (± 4.3%) i/s -      5.747M in   5.040397s
+                ctry      1.139M (± 5.0%) i/s -      5.690M in   5.010708s
 
 Comparison:
-                 try:  1131409.3 i/s
-            ctry:  1130167.0 i/s - same-ish: difference falls within error
+                 try:  1142362.3 i/s
+                ctry:  1138672.0 i/s - same-ish: difference falls within error
 
 method call
 Warming up --------------------------------------
-                 try    46.576k i/100ms
-                try!    55.293k i/100ms
-            ctry    47.093k i/100ms
-           ctry!    55.469k i/100ms
-                  &.    86.187k i/100ms
+                 try    46.037k i/100ms
+                try!    54.830k i/100ms
+                ctry    45.482k i/100ms
+               ctry!    54.816k i/100ms
+                  &.    84.472k i/100ms
 Calculating -------------------------------------
-                 try    766.311k (± 5.5%) i/s -      3.866M in   5.061535s
-                try!      1.010M (± 4.4%) i/s -      5.087M in   5.048077s
-            ctry    762.613k (± 4.3%) i/s -      3.815M in   5.011601s
-           ctry!    998.590k (± 4.3%) i/s -      4.992M in   5.008532s
-                  &.      2.484M (± 5.5%) i/s -     12.411M in   5.012813s
+                 try    756.418k (± 4.6%) i/s -      3.775M in   5.001909s
+                try!      1.000M (± 5.4%) i/s -      4.990M in   5.003267s
+                ctry    751.365k (± 4.7%) i/s -      3.775M in   5.036190s
+               ctry!    996.051k (± 5.0%) i/s -      4.988M in   5.022027s
+                  &.      2.497M (± 6.4%) i/s -     12.502M in   5.028081s
 
 Comparison:
-                  &.:  2483624.0 i/s
-                try!:  1009657.6 i/s - 2.46x  slower
-           ctry!:   998590.0 i/s - 2.49x  slower
-                 try:   766310.8 i/s - 3.24x  slower
-            ctry:   762612.6 i/s - 3.26x  slower
+                  &.:  2497243.5 i/s
+                try!:  1000467.1 i/s - 2.50x  slower
+               ctry!:   996051.2 i/s - 2.51x  slower
+                 try:   756418.3 i/s - 3.30x  slower
+                ctry:   751365.0 i/s - 3.32x  slower
 
 argument forwarding
 Warming up --------------------------------------
-                 try    25.980k i/100ms
-                try!    29.183k i/100ms
-            ctry    26.677k i/100ms
-            ctry    29.078k i/100ms
-                  &.    37.393k i/100ms
+                 try    26.066k i/100ms
+                try!    28.824k i/100ms
+                ctry    25.539k i/100ms
+                ctry    29.055k i/100ms
+                  &.    36.146k i/100ms
 Calculating -------------------------------------
-                 try    339.967k (± 4.6%) i/s -      1.715M in   5.054988s
-                try!    393.796k (± 3.8%) i/s -      1.984M in   5.047025s
-            ctry    343.054k (± 3.7%) i/s -      1.734M in   5.061635s
-            ctry    388.236k (± 4.3%) i/s -      1.948M in   5.027772s
-                  &.    527.620k (± 4.3%) i/s -      2.655M in   5.041570s
+                 try    338.103k (± 4.4%) i/s -      1.694M in   5.021148s
+                try!    388.846k (± 3.6%) i/s -      1.960M in   5.047372s
+                ctry    341.148k (± 4.0%) i/s -      1.711M in   5.024035s
+                ctry    362.466k (± 9.6%) i/s -      1.801M in   5.018466s
+                  &.    432.750k (± 3.6%) i/s -      2.169M in   5.018412s
 
 Comparison:
-                  &.:   527619.7 i/s
-                try!:   393796.5 i/s - 1.34x  slower
-            ctry:   388236.2 i/s - 1.36x  slower
-                 try:   339967.1 i/s - 1.55x  slower
+                  &.:   432749.7 i/s
+                try!:   388845.6 i/s - 1.11x  slower
+                ctry:   362465.6 i/s - 1.19x  slower
+                 try:   338102.9 i/s - 1.28x  slower
 
 block forwarding
 Warming up --------------------------------------
-                 try    25.641k i/100ms
-                try!    27.788k i/100ms
-            ctry    25.265k i/100ms
-           ctry!    29.359k i/100ms
-                  &.    36.445k i/100ms
+                 try    25.064k i/100ms
+                try!    29.168k i/100ms
+                ctry    26.167k i/100ms
+               ctry!    29.040k i/100ms
+                  &.    36.131k i/100ms
 Calculating -------------------------------------
-                 try    343.240k (± 4.4%) i/s -      1.718M in   5.014832s
-                try!    390.978k (± 4.1%) i/s -      1.973M in   5.054958s
-            ctry    344.072k (± 4.0%) i/s -      1.718M in   5.001148s
-           ctry!    394.959k (± 4.0%) i/s -      1.996M in   5.062976s
-                  &.    515.875k (± 4.6%) i/s -      2.588M in   5.027039s
+                 try    340.672k (± 3.6%) i/s -      1.704M in   5.009799s
+                try!    382.277k (± 3.2%) i/s -      1.925M in   5.040932s
+                ctry    333.874k (± 4.6%) i/s -      1.675M in   5.027495s
+               ctry!    382.734k (± 4.4%) i/s -      1.917M in   5.018040s
+                  &.    510.213k (± 5.2%) i/s -      2.565M in   5.043402s
 
 Comparison:
-                  &.:   515875.3 i/s
-           ctry!:   394959.5 i/s - 1.31x  slower
-                try!:   390978.3 i/s - 1.32x  slower
-            ctry:   344072.1 i/s - 1.50x  slower
-                 try:   343240.3 i/s - 1.50x  slower
+                  &.:   510212.9 i/s
+               ctry!:   382734.1 i/s - 1.33x  slower
+                try!:   382276.5 i/s - 1.33x  slower
+                 try:   340672.1 i/s - 1.50x  slower
+                ctry:   333874.4 i/s - 1.53x  slower
 
 only block
 Warming up --------------------------------------
-                 try    18.692k i/100ms
-                try!    19.156k i/100ms
-            ctry    18.764k i/100ms
-           ctry!    18.587k i/100ms
-                  &.    27.239k i/100ms
+                 try    18.338k i/100ms
+                try!    18.380k i/100ms
+                ctry    18.522k i/100ms
+               ctry!    17.641k i/100ms
+                  &.    25.807k i/100ms
 Calculating -------------------------------------
-                 try    225.787k (± 4.6%) i/s -      1.140M in   5.060885s
-                try!    225.013k (± 4.4%) i/s -      1.130M in   5.032620s
-            ctry    220.507k (± 5.4%) i/s -      1.107M in   5.035395s
-           ctry!    219.392k (± 6.1%) i/s -      1.097M in   5.019424s
-                  &.    342.087k (± 5.3%) i/s -      1.716M in   5.031456s
+                 try    221.397k (± 4.0%) i/s -      1.119M in   5.061096s
+                try!    221.105k (± 5.3%) i/s -      1.103M in   5.002868s
+                ctry    218.447k (± 5.1%) i/s -      1.093M in   5.016509s
+               ctry!    221.560k (± 4.0%) i/s -      1.111M in   5.024133s
+                  &.    348.835k (± 5.1%) i/s -      1.755M in   5.044540s
 
 Comparison:
-                  &.:   342086.8 i/s
-                 try:   225787.0 i/s - 1.52x  slower
-                try!:   225013.2 i/s - 1.52x  slower
-            ctry:   220507.4 i/s - 1.55x  slower
-           ctry!:   219392.0 i/s - 1.56x  slower
+                  &.:   348834.5 i/s
+               ctry!:   221560.2 i/s - 1.57x  slower
+                 try:   221397.1 i/s - 1.58x  slower
+                try!:   221105.4 i/s - 1.58x  slower
+                ctry:   218446.5 i/s - 1.60x  slower
 
